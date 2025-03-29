@@ -101,11 +101,6 @@ El método `notify()` despierta un hilo que estaba en espera después de haber l
 - **Programación normal**: Se basa en la ejecución secuencial y el uso de estructuras de control como bucles e iteraciones explícitas.
 - **Programación funcional**: Se centra en el uso de funciones de orden superior, expresiones lambda y evita el estado mutable. En este proyecto, la versión `EjemploProductorConsumidorJava8.java` usa programación funcional con expresiones lambda para crear hilos de manera más concisa.
 
-## Posibles Mejoras
-- Implementar `ExecutorService` para gestionar los hilos de forma más eficiente.
-- Agregar manejo de excepciones más robusto.
-- Incluir múltiples productores y consumidores para mayor concurrencia.
-
 ## Requisitos
 - Java 8 o superior.
 - Un entorno de desarrollo compatible (Eclipse, IntelliJ IDEA o NetBeans).
