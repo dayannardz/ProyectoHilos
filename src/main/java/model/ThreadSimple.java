@@ -4,6 +4,9 @@
  */
 package model;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author pamel
@@ -18,9 +21,14 @@ public class ThreadSimple extends Thread{
     public void run() {
         System.out.println("Se inicia el metodo run del hilo: " + getName());
         for (int i = 0; i < 100; i++) {
-            System.out.println("Hilo " + getName());
+            try{
+                Thread.sleep((long) (Math.random()*10));
+            }catch (InterruptedException ex){
+                Logger.getLogger(ThreadSimple.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            System.out.println("hilo"+ getName());
         }
-        System.out.println("Hilo finalizado");
+        System.out.println("Hilo finalizado" + getName());
     }
     
 }
