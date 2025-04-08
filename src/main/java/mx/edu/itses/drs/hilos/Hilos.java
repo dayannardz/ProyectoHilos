@@ -4,7 +4,7 @@
 
 package mx.edu.itses.drs.hilos;
 
-import model.ThreadSimple;
+import threads.ThreadSimple;
 
 /**
  *
